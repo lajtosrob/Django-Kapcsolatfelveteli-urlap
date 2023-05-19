@@ -20,6 +20,7 @@ from contact.views import index, contact
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
+    path('', index, name='index'),
     path('contact/', contact, name='contact'),
+    #path('contact_response/', contact_response, name='contact_response'),
 ]
