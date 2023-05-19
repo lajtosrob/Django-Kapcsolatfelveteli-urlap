@@ -1,6 +1,6 @@
 from django import forms
 
-temak = [(1, 'egyéb'), (2, 'reklamáció'), (3, 'megkeresés'), (4, 'tájékoztatás')]
+temak = [('Egyéb', 'egyéb'), ('Reklamáció', 'reklamáció'), ('Megkeresés', 'megkeresés'), ("Tájékoztatás", 'tájékoztatás')]
 
 class ContactForm(forms.Form):
     nev = forms.CharField(max_length=50, label="Név", widget=forms.TextInput(attrs={'placeholder': 'Az ön neve...'}))
